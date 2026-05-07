@@ -2,10 +2,12 @@
 {
     public class Booking
     {
-        public int Booking_Id { get; set; }
-        public Guid Home_Id { get; set; }
+        public int BookingId { get; set; }
+        public Guid HomeId { get; set; }
+        public Home home { get; set; }
 
-        public int User_Id { get; set; } 
+        public int UserId { get; set; } 
+        public User user { get; set; }
 
         public DateTime Check_In { get; set; }
 
