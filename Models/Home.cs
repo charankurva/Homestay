@@ -18,7 +18,7 @@
         public int UserId { get; set; }
         public User user { get; set; }
 
-        public ICollection<Booking> bookings { get; set; }
+        public ICollection<Booking> bookings { get; set; } = new List<Booking>();
 
     }
 

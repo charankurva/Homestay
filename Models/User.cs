@@ -12,8 +12,8 @@ namespace Homestay.Models
         public string Email { get; set; }
         public int PhoneNumber { get; set; }
         public string Bio { get; set; }
-        public ICollection<Booking> bookings { get; set; }
-        public ICollection<Reviews> reviews { get; set; }
+        public ICollection<Booking> bookings { get; set; } = new List<Booking>();
+        public ICollection<Reviews> reviews { get; set; } = new List<Reviews>();
 
 
 
